@@ -13,6 +13,12 @@ body {
     background-attachment: fixed;  /* Fixe l'image de fond en place lors du défilement. */
 }
 
+header {
+
+    color:black;
+
+}
+
 p {
     font-size: 1em;  /* Définit la taille de police pour les paragraphes. */
     line-height: 1.5em;  /* Définit la hauteur de ligne pour les paragraphes. */
