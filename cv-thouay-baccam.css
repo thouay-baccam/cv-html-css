@@ -1,503 +1,337 @@
 /* STYLES GÉNÉRAUX */
 * {
-    font-family: Avenir, sans-serif;
-    /* Définit la police de caractères par défaut pour tout le contenu de la page. */
-    color: white;
-    /* Définit la couleur du texte par défaut. */
-    padding: 0px;
-    /* Supprime la marge intérieure des éléments. */
-    margin: 0px;
-    /* Supprime la marge extérieure des éléments. */
-    box-sizing: border-box;
-    /* Utilise une boîte modèle pour le dimensionnement, incluant la marge et le rembourrage. */
+    font-family: Avenir, sans-serif;  /* Définit la police de caractères par défaut pour tout le contenu de la page. */
+    color: white;  /* Définit la couleur du texte par défaut. */
+    padding: 0px;  /* Supprime la marge intérieure des éléments. */
+    margin: 0px;   /* Supprime la marge extérieure des éléments. */
+    box-sizing: border-box;  /* Utilise une boîte modèle pour le dimensionnement, incluant la marge et le rembourrage. */
 }
 
 body {
-    background: url("images/bbox4.png");
-    /* Définit une image de fond pour le corps de la page. */
-    background-size: cover;
-    /* Ajuste la taille de l'image de fond pour couvrir tout l'écran. */
-    background-attachment: fixed;
-    /* Fixe l'image de fond en place lors du défilement. */
+    background: url("images/bbox4.png");  /* Définit une image de fond pour le corps de la page. */
+    background-size: cover;  /* Ajuste la taille de l'image de fond pour couvrir tout l'écran. */
+    background-attachment: fixed;  /* Fixe l'image de fond en place lors du défilement. */
 }
 
 header {
 
-    color: black;
+    color:black;
 
 }
 
 p {
-    font-size: 1em;
-    /* Définit la taille de police pour les paragraphes. */
-    line-height: 1.5em;
-    /* Définit la hauteur de ligne pour les paragraphes. */
+    font-size: 1em;  /* Définit la taille de police pour les paragraphes. */
+    line-height: 1.5em;  /* Définit la hauteur de ligne pour les paragraphes. */
 }
 
 a {
-    text-decoration: none;
-    /* Supprime la soulignement des liens. */
-    color: rgb(255, 255, 255);
-    /* Définit la couleur des liens. */
+    text-decoration: none;  /* Supprime la soulignement des liens. */
+    color: rgb(255, 255, 255);  /* Définit la couleur des liens. */
 }
 
 /* HEADER & FOOTER */
 header {
-    width: 100%;
-    /* Définit la largeur du header à 100% de la largeur de la fenêtre. */
-    padding: 20px 0;
-    /* Ajoute un espacement intérieur au header. */
-    background: url("images/bgbox.png") #ffffff;
-    /* Définit une image de fond et une couleur de fond pour le header. */
-    background-attachment: fixed;
-    /* Fixe l'image de fond en place. */
-    background-size: cover;
-    /* Ajuste la taille de l'image de fond pour couvrir tout le header. */
-    box-shadow: 0px 0px 15px #333;
-    /* Ajoute une ombre au header. */
-    position: static;
-    /* Définit la position du header comme statique. */
+    width: 100%;  /* Définit la largeur du header à 100% de la largeur de la fenêtre. */
+    padding: 20px 0;  /* Ajoute un espacement intérieur au header. */
+    background: url("images/bgbox.png") #ffffff;  /* Définit une image de fond et une couleur de fond pour le header. */
+    background-attachment: fixed;  /* Fixe l'image de fond en place. */
+    background-size: cover;  /* Ajuste la taille de l'image de fond pour couvrir tout le header. */
+    box-shadow: 0px 0px 15px #333;  /* Ajoute une ombre au header. */
+    position: static;  /* Définit la position du header comme statique. */
 }
 
 header {
-    border-top: 10px solid #000000;
-    /* Ajoute une bordure en haut du header. */
-    border-bottom: 10px solid #000000;
-    /* Ajoute une bordure en bas du header. */
-    height: 120px;
-    /* Définit la hauteur du header. */
+    border-top: 10px solid #000000;  /* Ajoute une bordure en haut du header. */
+    border-bottom: 10px solid #000000;  /* Ajoute une bordure en bas du header. */
+    height: 120px;  /* Définit la hauteur du header. */
 }
 
 header h1 {
-    color: white;
-    /* Définit la couleur du texte du titre du header. */
-    font-family: Avenir, sans-serif;
-    /* Définit la police de caractères du titre du header. */
-    font-size: 2.5em;
-    /* Définit la taille du texte du titre du header. */
-    text-align: center;
-    /* Centre le texte du titre du header. */
-    margin: auto;
-    /* Centre horizontalement le titre. */
+    color: white;  /* Définit la couleur du texte du titre du header. */
+    font-family: Avenir, sans-serif;  /* Définit la police de caractères du titre du header. */
+    font-size: 2.5em;  /* Définit la taille du texte du titre du header. */
+    text-align: center;  /* Centre le texte du titre du header. */
+    margin: auto;  /* Centre horizontalement le titre. */
 }
 
 /* SECTIONS */
 section {
-    display: flex;
-    /* Utilise un affichage flexible pour les sections. */
-    flex-flow: row wrap;
-    /* Permet le réarrangement des éléments en ligne lorsque l'espace est insuffisant. */
-    justify-content: center;
-    /* Centre le contenu horizontalement. */
-    width: 100%;
-    /* Définit la largeur des sections à 100%. */
-    padding-bottom: 20px;
-    /* Ajoute un espacement en bas de chaque section. */
-    margin: 20px auto;
-    /* Centre les sections horizontalement et ajoute de la marge autour. */
-    box-shadow: 0px 0px 10px #bbb;
-    /* Ajoute une ombre aux sections. */
-    background: url("images/bgbox3.png");
-    /* Définit une image de fond pour les sections. */
+    display: flex;  /* Utilise un affichage flexible pour les sections. */
+    flex-flow: row wrap;  /* Permet le réarrangement des éléments en ligne lorsque l'espace est insuffisant. */
+    justify-content: center;  /* Centre le contenu horizontalement. */
+    width: 100%;  /* Définit la largeur des sections à 100%. */
+    padding-bottom: 20px;  /* Ajoute un espacement en bas de chaque section. */
+    margin: 20px auto;  /* Centre les sections horizontalement et ajoute de la marge autour. */
+    box-shadow: 0px 0px 10px #bbb;  /* Ajoute une ombre aux sections. */
+    background: url("images/bgbox3.png");  /* Définit une image de fond pour les sections. */
 }
 
 section h2 {
-    margin: 20px 0;
-    /* Ajoute de la marge en haut et en bas des titres de section. */
-    font-family: Avenir, sans-serif;
-    /* Définit la police de caractères des titres de section. */
-    width: 90%;
-    /* Définit la largeur des titres de section à 90% de la largeur de la section. */
-    text-align: center;
-    /* Centre le texte des titres de section. */
+    margin: 20px 0;  /* Ajoute de la marge en haut et en bas des titres de section. */
+    font-family: Avenir, sans-serif;  /* Définit la police de caractères des titres de section. */
+    width: 90%;  /* Définit la largeur des titres de section à 90% de la largeur de la section. */
+    text-align: center;  /* Centre le texte des titres de section. */
 }
 
-section>div {
-    width: 90%;
-    /* Définit la largeur du contenu des sections à 90% de la largeur de la section. */
+section > div {
+    width: 90%;  /* Définit la largeur du contenu des sections à 90% de la largeur de la section. */
 }
 
 /* SECTION INFOS */
 .photo {
-    text-align: center;
-    /* Centre le texte à l'intérieur de la classe "photo". */
+    text-align: center;  /* Centre le texte à l'intérieur de la classe "photo". */
 }
 
 .photo img {
-    width: 150px;
-    /* Définit la largeur des images à 150px. */
-    height: 150px;
-    /* Définit la hauteur des images à 150px. */
-    border: 10px solid #000000;
-    /* Ajoute une bordure de 10px autour des images. */
-    box-shadow: 0px 0px 10px #777;
-    /* Ajoute une ombre aux images. */
-    border-radius: 50%;
-    /* Arrondit les coins des images. */
-    margin-top: -80px;
-    /* Déplace l'image vers le haut pour chevaucher le contenu précédent. */
+    width: 150px;  /* Définit la largeur des images à 150px. */
+    height: 150px;  /* Définit la hauteur des images à 150px. */
+    border: 10px solid #000000;  /* Ajoute une bordure de 10px autour des images. */
+    box-shadow: 0px 0px 10px #777;  /* Ajoute une ombre aux images. */
+    border-radius: 50%;  /* Arrondit les coins des images. */
+    margin-top: -80px;  /* Déplace l'image vers le haut pour chevaucher le contenu précédent. */
 }
 
 .prez {
-    border-bottom: 2px dashed #ccc;
-    /* Ajoute une bordure inférieure pointillée. */
-    font-family: Avenir, sans-serif;
-    /* Définit la police de caractères pour la classe "prez". */
-    text-align: center;
-    /* Centre le texte à l'intérieur de la classe "prez". */
+    border-bottom: 2px dashed #ccc;  /* Ajoute une bordure inférieure pointillée. */
+    font-family: Avenir, sans-serif;  /* Définit la police de caractères pour la classe "prez". */
+    text-align: center;  /* Centre le texte à l'intérieur de la classe "prez". */
 }
 
 .prez a {
-    display: block;
-    /* Affiche les liens comme blocs pour les centrer. */
-    text-align: center;
-    /* Centre le texte des liens. */
-    padding: 10px;
-    /* Ajoute un espacement intérieur de 10px aux liens. */
-    margin: 10px auto 30px auto;
-    /* Définit la marge des liens. */
-    color: #fff;
-    /* Définit la couleur du texte des liens. */
-    background-color: #EA0;
-    /* Définit la couleur de fond des liens. */
-    box-shadow: 0px 0px 10px #ccc;
-    /* Ajoute une ombre aux liens. */
-    border-radius: 5px;
-    /* Arrondit les coins des liens. */
+    display: block;  /* Affiche les liens comme blocs pour les centrer. */
+    text-align: center;  /* Centre le texte des liens. */
+    padding: 10px;  /* Ajoute un espacement intérieur de 10px aux liens. */
+    margin: 10px auto 30px auto;  /* Définit la marge des liens. */
+    color: #fff;  /* Définit la couleur du texte des liens. */
+    background-color: #EA0;  /* Définit la couleur de fond des liens. */
+    box-shadow: 0px 0px 10px #ccc;  /* Ajoute une ombre aux liens. */
+    border-radius: 5px;  /* Arrondit les coins des liens. */
 }
 
 .contact-flex {
-    display: flex;
-    /* Utilise un affichage flexible pour les éléments de contact. */
-    font-family: Avenir, sans-serif;
-    /* Définit la police de caractères pour les éléments de contact. */
-    flex-flow: row wrap;
-    /* Permet le réarrangement des éléments en ligne lorsque l'espace est insuffisant. */
+    display: flex;  /* Utilise un affichage flexible pour les éléments de contact. */
+    font-family: Avenir, sans-serif;  /* Définit la police de caractères pour les éléments de contact. */
+    flex-flow: row wrap;  /* Permet le réarrangement des éléments en ligne lorsque l'espace est insuffisant. */
 }
 
 .contact-flex p:first-child {
-    flex: 0 0 40%;
-    /* Définit la largeur du premier élément de contact à 40%. */
-    text-align: center;
-    /* Centre le texte du premier élément de contact. */
+    flex: 0 0 40%;  /* Définit la largeur du premier élément de contact à 40%. */
+    text-align: center;  /* Centre le texte du premier élément de contact. */
 }
 
 .contact-flex p:last-child {
-    flex: 0 0 60%;
-    /* Définit la largeur du dernier élément de contact à 60%. */
-    text-align: left;
-    /* Aligne le texte à gauche dans le dernier élément de contact. */
+    flex: 0 0 60%;  /* Définit la largeur du dernier élément de contact à 60%. */
+    text-align: left;  /* Aligne le texte à gauche dans le dernier élément de contact. */
 }
 
 .social {
-    display: flex;
-    /* Utilise un affichage flexible pour les icônes de médias sociaux. */
-    justify-content: space-around;
-    /* Répartit équitablement l'espace horizontal entre les icônes. */
-    margin: 10px auto 0px auto;
-    /* Centre les icônes horizontalement et ajoute de la marge en haut. */
+    display: flex;  /* Utilise un affichage flexible pour les icônes de médias sociaux. */
+    justify-content: space-around;  /* Répartit équitablement l'espace horizontal entre les icônes. */
+    margin: 10px auto 0px auto;  /* Centre les icônes horizontalement et ajoute de la marge en haut. */
 }
 
 .social img {
-    width: 40px;
-    /* Définit la largeur des icônes de médias sociaux à 40px. */
-    height: 40px;
-    /* Définit la hauteur des icônes de médias sociaux à 40px. */
+    width: 40px;  /* Définit la largeur des icônes de médias sociaux à 40px. */
+    height: 40px;  /* Définit la hauteur des icônes de médias sociaux à 40px. */
 }
 
 /* SECTION EXP ET FORMATION */
 .exp {
-    display: flex;
-    /* Utilise un affichage flexible pour les éléments d'expérience. */
-    flex-flow: row wrap;
-    /* Permet le réarrangement des éléments en ligne lorsque l'espace est insuffisant. */
-    border-bottom: 1px solid #bbb;
-    /* Ajoute une bordure inférieure solide. */
-    padding-bottom: 10px;
-    /* Ajoute de l'espacement en bas des éléments d'expérience. */
-    margin-bottom: 10px;
-    /* Ajoute de la marge en bas des éléments d'expérience. */
+    display: flex;  /* Utilise un affichage flexible pour les éléments d'expérience. */
+    flex-flow: row wrap;  /* Permet le réarrangement des éléments en ligne lorsque l'espace est insuffisant. */
+    border-bottom: 1px solid #bbb;  /* Ajoute une bordure inférieure solide. */
+    padding-bottom: 10px;  /* Ajoute de l'espacement en bas des éléments d'expérience. */
+    margin-bottom: 10px;  /* Ajoute de la marge en bas des éléments d'expérience. */
 }
 
 .exp-info {
-    display: flex;
-    /* Utilise un affichage flexible pour les informations d'expérience. */
-    flex-flow: column wrap;
-    /* Affiche les informations en colonnes. */
+    display: flex;  /* Utilise un affichage flexible pour les informations d'expérience. */
+    flex-flow: column wrap;  /* Affiche les informations en colonnes. */
 }
 
 .exp-logo {
-    flex: 0 0 25%;
-    /* Définit la largeur des logos d'expérience à 25%. */
-    max-width: 100px;
-    /* Définit la largeur maximale des logos à 100px. */
+    flex: 0 0 25%;  /* Définit la largeur des logos d'expérience à 25%. */
+    max-width: 100px;  /* Définit la largeur maximale des logos à 100px. */
 }
 
 .exp-info {
-    flex: 0 0 70%;
-    /* Définit la largeur des informations d'expérience à 70%. */
-    margin-left: auto;
-    /* Centre les informations horizontalement. */
+    flex: 0 0 70%;  /* Définit la largeur des informations d'expérience à 70%. */
+    margin-left: auto;  /* Centre les informations horizontalement. */
 }
 
 .exp img {
-    width: 100%;
-    /* Définit la largeur des images d'expérience à 100%. */
+    width: 100%;  /* Définit la largeur des images d'expérience à 100%. */
 }
 
 .exp h3 {
-    font-size: 1.2em;
-    /* Définit la taille de police pour les titres d'expérience. */
+    font-size: 1.2em;  /* Définit la taille de police pour les titres d'expérience. */
 }
 
 .exp h4 {
-    font-size: 1em;
-    /* Définit la taille de police pour les sous-titres d'expérience. */
-    font-weight: normal;
-    /* Définit le poids de la police comme normal. */
+    font-size: 1em;  /* Définit la taille de police pour les sous-titres d'expérience. */
+    font-weight: normal;  /* Définit le poids de la police comme normal. */
 }
 
 /* SECTION COMPETENCES */
 .h3gauche {
-    width: 90%;
-    /* Définit la largeur de l'élément avec la classe "h3gauche" à 90%. */
-    font-family: Avenir, sans-serif;
-    /* Définit la police de caractères pour cet élément. */
+    width: 90%;  /* Définit la largeur de l'élément avec la classe "h3gauche" à 90%. */
+    font-family: Avenir, sans-serif;  /* Définit la police de caractères pour cet élément. */
 }
 
 .comp {
-    display: flex;
-    /* Utilise un affichage flexible pour les compétences. */
-    flex-flow: row wrap;
-    /* Permet le réarrangement des compétences en ligne lorsque l'espace est insuffisant. */
-    margin-bottom: 10px;
-    /* Ajoute de la marge en bas des compétences. */
-    font-family: Avenir, sans-serif;
-    /* Définit la police de caractères pour les compétences. */
+    display: flex;  /* Utilise un affichage flexible pour les compétences. */
+    flex-flow: row wrap;  /* Permet le réarrangement des compétences en ligne lorsque l'espace est insuffisant. */
+    margin-bottom: 10px;  /* Ajoute de la marge en bas des compétences. */
+    font-family: Avenir, sans-serif;  /* Définit la police de caractères pour les compétences. */
 }
 
 .comp p {
-    flex: 0 0 40%;
-    /* Définit la largeur des paragraphes de compétences à 40%. */
+    flex: 0 0 40%;  /* Définit la largeur des paragraphes de compétences à 40%. */
 }
 
 .conteneur-barre {
-    flex: 0 0 60%;
-    /* Définit la largeur du conteneur de barre de compétences à 60%. */
-    border-radius: 5px;
-    /* Arrondit les coins du conteneur. */
-    background-color: grey;
-    /* Définit la couleur de fond du conteneur. */
-    border-bottom: 1px ridge grey;
-    /* Ajoute une bordure inférieure en relief. */
+    flex: 0 0 60%;  /* Définit la largeur du conteneur de barre de compétences à 60%. */
+    border-radius: 5px;  /* Arrondit les coins du conteneur. */
+    background-color: grey;  /* Définit la couleur de fond du conteneur. */
+    border-bottom: 1px ridge grey;  /* Ajoute une bordure inférieure en relief. */
 }
 
 .barre {
-    display: block;
-    /* Affiche les barres de compétences comme des blocs pour les aligner verticalement. */
-    height: 100%;
-    /* Définit la hauteur des barres à 100% du conteneur. */
-    border-top-left-radius: 5px;
-    /* Arrondit le coin supérieur gauche des barres. */
-    border-bottom-left-radius: 5px;
-    /* Arrondit le coin inférieur gauche des barres. */
+    display: block;  /* Affiche les barres de compétences comme des blocs pour les aligner verticalement. */
+    height: 100%;  /* Définit la hauteur des barres à 100% du conteneur. */
+    border-top-left-radius: 5px;  /* Arrondit le coin supérieur gauche des barres. */
+    border-bottom-left-radius: 5px;  /* Arrondit le coin inférieur gauche des barres. */
 }
 
 .c95 {
-    width: 95%;
-    /* Définit la largeur de la barre de compétence à 95%. */
-    background-color: rgb(0, 200, 255);
-    /* Définit la couleur de fond de la barre. */
+    width: 95%;  /* Définit la largeur de la barre de compétence à 95%. */
+    background-color: rgb(0, 200, 255);  /* Définit la couleur de fond de la barre. */
 }
 
 .c90 {
-    width: 90%;
-    /* Définit la largeur de la barre de compétence à 90%. */
-    background-color: rgb(0, 158, 229);
-    /* Définit la couleur de fond de la barre. */
+    width: 90%;  /* Définit la largeur de la barre de compétence à 90%. */
+    background-color: rgb(0, 158, 229);  /* Définit la couleur de fond de la barre. */
 }
 
 .c60 {
-    width: 60%;
-    /* Définit la largeur de la barre de compétence à 60%. */
-    background-color: rgb(0, 115, 153);
-    /* Définit la couleur de fond de la barre. */
+    width: 60%;  /* Définit la largeur de la barre de compétence à 60%. */
+    background-color: rgb(0, 115, 153);  /* Définit la couleur de fond de la barre. */
 }
 
 .c50 {
-    width: 50%;
-    /* Définit la largeur de la barre de compétence à 50%. */
-    background-color: rgb(0, 71, 127);
-    /* Définit la couleur de fond de la barre. */
-    border-radius: 5px;
-    /* Arrondit les coins de la barre. */
+    width: 50%;  /* Définit la largeur de la barre de compétence à 50%. */
+    background-color: rgb(0, 71, 127);  /* Définit la couleur de fond de la barre. */
+    border-radius: 5px;  /* Arrondit les coins de la barre. */
 }
 
 .comp2 {
-    display: flex;
-    /* Utilise un affichage flexible pour les compétences de la deuxième rangée. */
-    flex-flow: row wrap;
-    /* Permet le réarrangement des compétences en ligne lorsque l'espace est insuffisant. */
-    justify-content: space-between;
-    /* Répartit l'espace entre les compétences de manière égale. */
+    display: flex;  /* Utilise un affichage flexible pour les compétences de la deuxième rangée. */
+    flex-flow: row wrap;  /* Permet le réarrangement des compétences en ligne lorsque l'espace est insuffisant. */
+    justify-content: space-between;  /* Répartit l'espace entre les compétences de manière égale. */
 }
 
-.c93 {
-    width: 93%;
-    /* Définit la largeur de la barre de progression à 93%. */
-    background-color: rgb(191, 0, 237);
-    /* Définit la couleur de fond de la barre de progression en violet. */
+.c93{
+    width: 93%;  /* Définit la largeur de la barre de progression à 93%. */
+    background-color: rgb(191, 0, 237);  /* Définit la couleur de fond de la barre de progression en violet. */
 }
 
-.c89 {
-    width: 89%;
-    /* Définit la largeur de la barre de progression à 89%. */
-    background-color: rgb(191, 0, 206);
-    /* Définit la couleur de fond de la barre de progression en violet foncé. */
+.c89{
+    width: 89%;  /* Définit la largeur de la barre de progression à 89%. */
+    background-color: rgb(191, 0, 206);  /* Définit la couleur de fond de la barre de progression en violet foncé. */
 }
 
-.c85 {
-    width: 85%;
-    /* Définit la largeur de la barre de progression à 85%. */
-    background-color: rgb(191, 0, 176);
-    /* Définit la couleur de fond de la barre de progression en violet plus foncé. */
+.c85{
+    width: 85%;  /* Définit la largeur de la barre de progression à 85%. */
+    background-color: rgb(191, 0, 176);  /* Définit la couleur de fond de la barre de progression en violet plus foncé. */
 }
 
-.c80 {
-    width: 80%;
-    /* Définit la largeur de la barre de progression à 80%. */
-    background-color: rgb(191, 0, 164);
-    /* Définit la couleur de fond de la barre de progression en violet encore plus foncé. */
-    border-radius: 5px;
-    /* Ajoute un arrondi de 5px aux coins inférieurs de la barre. */
+.c80{
+    width: 80%;  /* Définit la largeur de la barre de progression à 80%. */
+    background-color: rgb(191, 0, 164);  /* Définit la couleur de fond de la barre de progression en violet encore plus foncé. */
+    border-radius: 5px;  /* Ajoute un arrondi de 5px aux coins inférieurs de la barre. */
 
 }
 
-.conteneur-barre2 {
-    flex: 0 0 100%;
-    /* Définit la largeur de l'élément conteneur à 100%. */
-    height: 0.5em;
-    /* Définit la hauteur de l'élément conteneur à 0.5em. */
-    margin-bottom: 0.25em;
-    /* Ajoute une marge inférieure de 0.25em à l'élément conteneur. */
-    border-radius: 5px;
-    /* Ajoute un arrondi de 5px aux coins inférieurs de l'élément conteneur. */
-    background-color: grey;
-    /* Définit la couleur de fond de l'élément conteneur en gris. */
+.conteneur-barre2{
+    flex: 0 0 100%;  /* Définit la largeur de l'élément conteneur à 100%. */
+    height: 0.5em;  /* Définit la hauteur de l'élément conteneur à 0.5em. */
+    margin-bottom: 0.25em;  /* Ajoute une marge inférieure de 0.25em à l'élément conteneur. */
+    border-radius: 5px;  /* Ajoute un arrondi de 5px aux coins inférieurs de l'élément conteneur. */
+    background-color: grey;  /* Définit la couleur de fond de l'élément conteneur en gris. */
 }
 
 /* SECTION INTÉRÊTS */
-.interet {
-    flex: 0 1 50%;
-    /* Contrôle la disposition flexible de l'élément pour qu'il occupe 50% de l'espace disponible. */
-    display: flex;
-    /* Définit l'affichage de l'élément en tant que conteneur flexible. */
-    flex-flow: column wrap;
-    /* Indique que les enfants de l'élément sont affichés en colonne et peuvent passer à la ligne en cas de besoin. */
-    align-items: center;
-    /* Centre les éléments enfants horizontalement dans l'élément conteneur. */
-    margin-bottom: 20px;
-    /* Ajoute une marge inférieure de 20px à l'élément. */
+.interet{
+    flex: 0 1 50%;  /* Contrôle la disposition flexible de l'élément pour qu'il occupe 50% de l'espace disponible. */
+    display: flex;  /* Définit l'affichage de l'élément en tant que conteneur flexible. */
+    flex-flow: column wrap;  /* Indique que les enfants de l'élément sont affichés en colonne et peuvent passer à la ligne en cas de besoin. */
+    align-items: center;  /* Centre les éléments enfants horizontalement dans l'élément conteneur. */
+    margin-bottom: 20px;  /* Ajoute une marge inférieure de 20px à l'élément. */
 }
 
-.interet img {
-    width: 80px;
-    /* Définit la largeur des images d'intérêt à 80px. */
-    height: 80px;
-    /* Définit la hauteur des images d'intérêt à 80px. */
-    border-radius: 50%;
-    /* Ajoute un arrondi de 50% pour donner aux images une forme circulaire. */
-    box-shadow: 0px 0px 15px #555;
-    /* Ajoute une ombre aux images. */
+.interet img{
+    width: 80px;  /* Définit la largeur des images d'intérêt à 80px. */
+    height: 80px;  /* Définit la hauteur des images d'intérêt à 80px. */
+    border-radius: 50%;  /* Ajoute un arrondi de 50% pour donner aux images une forme circulaire. */
+    box-shadow: 0px 0px 15px #555;  /* Ajoute une ombre aux images. */
 
 }
 
 /* VERSION BUREAU DU CV */
-@media screen and (min-width: 980px) {
-    section {
-        width: 80%;
-        /* Définit la largeur des sections à 80% de la largeur de la fenêtre lorsque la largeur de la fenêtre est supérieure à 980px. */
-        box-shadow: 0px 0px 10px #bbb;
-        /* Ajoute une ombre aux sections. */
+@media screen and (min-width: 980px){
+    section{
+        width: 80%;  /* Définit la largeur des sections à 80% de la largeur de la fenêtre lorsque la largeur de la fenêtre est supérieure à 980px. */
+        box-shadow: 0px 0px 10px #bbb;  /* Ajoute une ombre aux sections. */
     }
 
-    a:hover {
-        color: #EA0;
-        /* Change la couleur du texte des liens au survol en jaune (#EA0). */
+    a:hover{
+        color: #EA0;  /* Change la couleur du texte des liens au survol en jaune (#EA0). */
     }
 
-    header h1 {
-        width: 80%;
-        /* Définit la largeur du titre du header à 80% de la largeur de la fenêtre lorsque la largeur de la fenêtre est supérieure à 980px. */
+    header h1{
+        width: 80%;  /* Définit la largeur du titre du header à 80% de la largeur de la fenêtre lorsque la largeur de la fenêtre est supérieure à 980px. */
     }
 
-    .prez,
-    .contact {
-        flex: 0 0 45%;
-        /* Contrôle la disposition flexible pour que les éléments .prez et .contact occupent 45% de l'espace disponible. */
+    .prez, .contact{
+        flex: 0 0 45%;  /* Contrôle la disposition flexible pour que les éléments .prez et .contact occupent 45% de l'espace disponible. */
     }
 
-    .prez {
-        border-bottom: none;
-        /* Supprime la bordure inférieure de l'élément .prez. */
-        border-right: 2px solid #ccc;
-        /* Ajoute une bordure de 2px solide à droite de l'élément .prez. */
-        padding-right: 20px;
-        /* Ajoute un espacement intérieur de 20px à droite de l'élément .prez. */
-        margin-left: auto;
-        /* Centre horizontalement l'élément .prez. */
+    .prez{
+        border-bottom: none;  /* Supprime la bordure inférieure de l'élément .prez. */
+        border-right: 2px solid #ccc;  /* Ajoute une bordure de 2px solide à droite de l'élément .prez. */
+        padding-right: 20px;  /* Ajoute un espacement intérieur de 20px à droite de l'élément .prez. */
+        margin-left: auto;  /* Centre horizontalement l'élément .prez. */
     }
 
-    .contact {
-        padding-left: 20px;
-        /* Ajoute un espacement intérieur de 20px à gauche de l'élément .contact. */
-        font-family: Avenir, sans-serif;
-        /* Définit la police de caractères pour le texte de l'élément .contact. */
-        margin-right: auto;
-        /* Centre horizontalement l'élément .contact. */
-        text-align: center;
-        /* Centre le texte à l'intérieur de l'élément .contact. */
+    .contact{
+        padding-left: 20px;  /* Ajoute un espacement intérieur de 20px à gauche de l'élément .contact. */
+        font-family: Avenir, sans-serif;  /* Définit la police de caractères pour le texte de l'élément .contact. */
+        margin-right: auto;  /* Centre horizontalement l'élément .contact. */
+        text-align:center;  /* Centre le texte à l'intérieur de l'élément .contact. */
     }
 
-    .prez a {
-        border: 2px solid transparent;
-        /* Définit une bordure de 2px transparente pour les liens à l'intérieur de l'élément .prez. */
+    .prez a{
+        border: 2px solid transparent;  /* Définit une bordure de 2px transparente pour les liens à l'intérieur de l'élément .prez. */
     }
 
-    .prez a:hover {
-        color: #f28835;
-        /* Change la couleur du texte des liens au survol en orange (#f28835). */
-        background-color: #fff;
-        /* Définit la couleur de fond des liens au survol en blanc (#fff). */
-        border: 2px solid #f28835;
-        /* Ajoute une bordure de 2px solide aux liens au survol en orange. */
-        box-shadow: 0px 0px 20px #666;
-        /* Ajoute une ombre aux liens au survol. */
+    .prez a:hover{
+        color: #f28835;  /* Change la couleur du texte des liens au survol en orange (#f28835). */
+        background-color: #fff;  /* Définit la couleur de fond des liens au survol en blanc (#fff). */
+        border: 2px solid #f28835;  /* Ajoute une bordure de 2px solide aux liens au survol en orange. */
+        box-shadow: 0px 0px 20px #666;  /* Ajoute une ombre aux liens au survol. */
     }
 
-    .exp-logo {
-        flex: 0 0 10%;
-        /* Contrôle la disposition flexible pour que l'élément .exp-logo occupe 10% de l'espace disponible. */
+    .exp-logo{
+        flex: 0 0 10%;  /* Contrôle la disposition flexible pour que l'élément .exp-logo occupe 10% de l'espace disponible. */
     }
 
-    .exp-info,
-    .exp-desc {
-        font-family: Avenir, sans-serif;
-        /* Définit la police de caractères pour le texte de l'élément .exp-info et .exp-desc. */
-        flex: 0 0 90%;
-        /* Contrôle la disposition flexible pour que les éléments .exp-info et .exp-desc occupent 90% de l'espace disponible. */
-        margin-left: auto;
-        /* Centre horizontalement les éléments .exp-info et .exp-desc. */
+    .exp-info, .exp-desc{
+        font-family: Avenir, sans-serif;  /* Définit la police de caractères pour le texte de l'élément .exp-info et .exp-desc. */
+        flex: 0 0 90%;  /* Contrôle la disposition flexible pour que les éléments .exp-info et .exp-desc occupent 90% de l'espace disponible. */
+        margin-left: auto;  /* Centre horizontalement les éléments .exp-info et .exp-desc. */
     }
 
-    .interet {
-        flex: 0 1 25%;
-        /* Contrôle la disposition flexible pour que l'élément .interet occupe 25% de l'espace disponible. */
-    }
-
-    figcaption {
-
-        text-align: center;
-
+    .interet{
+        flex: 0 1 25%;  /* Contrôle la disposition flexible pour que l'élément .interet occupe 25% de l'espace disponible. */
     }
 }
